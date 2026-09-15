@@ -671,3 +671,182 @@ a {
 .btn-secondary:hover {
     background-color: #eee;
 }
+/* Container for the main content to make it fill the page width nicely */
+.featured-products-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.featured-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* 2-Column Grid Layout for the Cards */
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Places the 2 cards side-by-side */
+    gap: 30px; /* Space between the two cards */
+    width: 100%;
+}
+
+/* Individual Card Styles */
+.product-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px; /* Uniform height for images */
+    object-fit: cover; /* Prevents stretching/distortion */
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Mobile Responsiveness (Stacks cards vertically on phones) */
+@media (max-width: 768px) {
+    .product-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Traditional\ Sourdough.png') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #d97706;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+/* Value Highlights Section */
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.feature-item {
+    background: #fdfaf6;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1fr solid #eee;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Product Section (2x2 Grid on desktop) */
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    color: #d97706;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Testimonials */
+.testimonials-section {
+    background-color: #f7f3ed;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 60px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto 0 auto;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    font-style: italic;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonial-card h5 {
+    margin-top: 15px;
+    font-style: normal;
+    color: #666;
+}
