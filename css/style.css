@@ -1,43 +1,39 @@
 /* 1. VARIABLES, RESETS & BASE STYLES */
 
 :root {
-    --primary: #c86d51; /* Store the website's main colour. */
-    --primary-dark: #2c1d11; /* Store a darker version for strong backgrounds. */
-    --accent: #faf6f0; /* Store the highlight and hover colour. */
-    --background: #f9f8f6; /* Store the page background colour. */
-    --surface: #ffffff; /* Store the card background colour. */
-    --text: #212529; /* Store the normal text colour. */
-    --border: #e2dfd7; /* Store the card border colour. */
+    --primary: #c86d51;       /* Main brand accent color */
+    --primary-dark: #2c1d11;  /* Dark background color */
+    --accent: #faf6f0;        /* Light highlight color */
+    --background: #f9f8f6;    /* Page background color */
+    --surface: #ffffff;       /* Card background color */
+    --text: #212529;          /* Default text color */
+    --border: #e2dfd7;        /* Border color */
 }
 
-/* Select every HTML element. */
 * {
-    box-sizing: border-box; /* Include padding and borders inside element widths. */
+    box-sizing: border-box;
 }
 
-/* Style the complete visible webpage. */
 body {
-    margin: 0; /* Remove the browser's default outside spacing. */
-    background-color: var(--background); /* Use the stored background colour. */
-    color: var(--text); /* Use the stored normal text colour. */
-    font-family: Arial, Helvetica, sans-serif; /* Set readable fallback fonts. */
-    font-size: 16px; /* Set the default text size. */
-    line-height: 1.6; /* Add readable space between lines. */
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-/* Create a reusable centred content area. */
 .container {
-    width: min(90%, 1200px); /* Use 90% width but never exceed 1200px. */
-    margin-inline: auto; /* Centre the container horizontally. */
+    width: min(90%, 1200px);
+    margin-inline: auto;
 }
 
-/* Remove normal underlines and animate link colour changes. */
 a {
-    text-decoration: none; /* Remove the browser's default underline. */
-    transition: 0.25s ease; /* Smoothly animate interaction changes. */
+    text-decoration: none;
+    transition: 0.25s ease;
 }
 
-/* General Buttons */
+/* Base Buttons */
 .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -49,21 +45,23 @@ a {
 
 .btn-primary {
     background-color: #cbb26a;
-    color: #fff !important;
+    color: #ffffff !important;
     padding: 8px 18px;
     border-radius: 20px;
 }
 
+/* Light border button for dark backgrounds */
 .btn-secondary {
     background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #ffffff;
+    color: #ffffff;
 }
 
+/* Dark border button for light backgrounds/forms */
 .btn-secondary-alt {
     background-color: transparent;
-    color: #666;
-    border: 1px solid #ccc;
+    color: #666666;
+    border: 1px solid #cccccc;
     padding: 10px;
     border-radius: 3px;
     font-size: 0.9rem;
@@ -72,7 +70,7 @@ a {
 }
 
 .btn-secondary-alt:hover {
-    background-color: #eee;
+    background-color: #eeeeee;
 }
 
 
@@ -84,17 +82,15 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* LOGO AND BUSINESS NAME */
 .logo {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* LOGO IMAGE */
 .logo-img {
     width: 80px;
     height: 80px;
@@ -102,9 +98,8 @@ a {
     display: block;
 }
 
-/* BUSINESS NAME */
 .logo h2 {
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 22px;
     margin: 0;
@@ -158,10 +153,9 @@ a {
     font-weight: bold;
 }
 
-/* Hero Section */
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Traditional\ Sourdough.png') center/cover no-repeat;
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     padding: 100px 20px;
 }
@@ -248,21 +242,20 @@ a {
     text-align: center;
 }
 
-/* ADDRESS & MAP */
 .address-section h3 {
     font-size: 1.1rem;
     margin-bottom: 5px;
-    color: #222;
+    color: #222222;
 }
 
 .address-text {
     font-size: 0.9rem;
-    color: #666;
+    color: #666666;
     margin-bottom: 15px;
 }
 
 .map-box {
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 4px;
     overflow: hidden;
 }
@@ -283,19 +276,19 @@ a {
     border-radius: 4px;
     padding: 15px;
     font-size: 0.85rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .info-card h4 {
     margin-bottom: 10px;
     font-size: 0.9rem;
-    color: #333;
+    color: #333333;
 }
 
 .info-card hr {
     margin: 10px 0;
     border: 0;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #eeeeee;
 }
 
 .phone-link {
@@ -376,7 +369,7 @@ a {
 }
 
 .featured-header p {
-    color: #666;
+    color: #666666;
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
 }
@@ -393,7 +386,7 @@ a {
     padding: 0 20px;
 }
 
-/* Product Section Grid */
+/* Consolidated Responsive Product Grid */
 .product-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -442,7 +435,6 @@ a {
     margin-top: 10px;
 }
 
-/* Value Highlights Section */
 .features-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -457,7 +449,7 @@ a {
     background: #fdfaf6;
     padding: 25px;
     border-radius: 8px;
-    border: 1px solid #eee; /* Fixed border property */
+    border: 1px solid #eeeeee;
 }
 
 .feature-icon {
@@ -466,7 +458,6 @@ a {
     margin-bottom: 10px;
 }
 
-/* Testimonials */
 .testimonials-section {
     background-color: #f7f3ed;
     text-align: center;
@@ -483,17 +474,17 @@ a {
 }
 
 .testimonial-card {
-    background: #fff;
+    background: #ffffff;
     padding: 25px;
     border-radius: 8px;
     font-style: italic;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .testimonial-card h5 {
     margin-top: 15px;
     font-style: normal;
-    color: #666;
+    color: #666666;
 }
 
 
@@ -504,13 +495,13 @@ a {
     border: 1px solid #e2e8f0;
     border-radius: 4px;
     padding: 25px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .form-card h3 {
     margin-bottom: 20px;
     font-size: 1.2rem;
-    color: #222;
+    color: #222222;
 }
 
 .form-group {
@@ -522,7 +513,7 @@ a {
     font-size: 0.85rem;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #333;
+    color: #333333;
 }
 
 .form-group input, 
@@ -533,7 +524,7 @@ a {
     border: 1px solid #cccccc;
     border-radius: 3px;
     font-size: 0.85rem;
-    color: #444;
+    color: #444444;
     background-color: #fafafa;
 }
 
@@ -548,7 +539,7 @@ a {
 .btn-submit-form {
     width: 100%;
     background-color: #c86d51;
-    color: white;
+    color: #ffffff;
     border: none;
     padding: 10px;
     border-radius: 3px;
@@ -568,7 +559,7 @@ a {
 
 .form-intro {
     font-size: 0.9rem;
-    color: #666;
+    color: #666666;
     margin-bottom: 1.5rem;
 }
 
@@ -667,7 +658,7 @@ a {
 }
 
 .social-links a[href*="facebook.com"] {
-    background-color: #1877F2;
+    background-color: #1877f2;
 }
 .social-links a[href*="facebook.com"]::before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>');
@@ -691,7 +682,7 @@ a {
 }
 
 .social-links a[href*="youtube.com"] {
-    background-color: #FF0000;
+    background-color: #ff0000;
 }
 .social-links a[href*="youtube.com"]::before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffffff"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>');
@@ -706,8 +697,11 @@ a {
 }
 
 
-/* 8. MEDIA QUERIES */
+/* ==========================================
+   8. MEDIA QUERIES
+   ========================================== */
 
+/* Tablet layout adjustments */
 @media (max-width: 900px) {
     .site-header {
         flex-direction: column;
@@ -724,12 +718,14 @@ a {
     }
 }
 
+/* Mobile product cards */
 @media (max-width: 768px) {
     .product-section {
         grid-template-columns: 1fr;
     }
 }
 
+/* Mobile navigation & grid stacking */
 @media (max-width: 600px) {
     .navbar ul {
         width: 100%;

@@ -56,6 +56,16 @@ THOMAS-MAART-WEDE5020-PART-2/
 * **Student Name**: Thomas Maart
 * **Module**: WEDE5020 – Web Development 1
 
+
+## Reference List
+​​Afrihost, 2026. Linux Web Hosting Plans & Domian Registration. [Online]  
+Available at: https://www.afrihost.com 
+[Accessed 07 August 2026]. 
+
+​w3schools, 2026. Html. [Online]  
+Available at: https://www.w3schools.com/ 
+[Accessed 05 August 2026]. 
+
 ```
 
 ```
